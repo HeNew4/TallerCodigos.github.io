@@ -1,3 +1,3 @@
 # TallerCodigos
 
-Todos los codigos del taller
+Todos los codigos del taller de electronica
