@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Taller Electronica</title>
+</head>
+
+<body>
+   <header>
+      <h1>Taller de Electronica</h1>
+   </header>
+   <main>
+      <div class="actividad" id="actividad1">
+         <h2>Actividad 1</h2>
+         <p>Esta actividad se realizara el encendido y apagado de un led usando un Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 1-->
+      <div class="actividad" id="actividad2">
+         <h2>Actividad 2</h2>
+         <p>Esta actividad se realizara el encendido y apagado de dos leds usando un Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED2 <span class="signo"> =  <span class="number">12</span>;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED1, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED2, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 2-->
+      <div class="actividad" id="actividad3">
+         <h2>Actividad 3</h2>
+         <p>Esta actividad se realizara el encendido y apagado de tres leds usando un Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED2 <span class="signo"> =  <span class="number">12</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED3 <span class="signo"> =  <span class="number">11</span>;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED1, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED2, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED3, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 3-->
+      <div class="actividad" id="actividad4">
+         <h2>Actividad 4</h2>
+         <p>Esta actividad se realizara el encendido y apagado de tres leds usando un Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED2 <span class="signo"> =  <span class="number">12</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED3 <span class="signo"> =  <span class="number">11</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED4 <span class="signo"> =  <span class="number">10</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED5 <span class="signo"> =  <span class="number">9</span>;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED1, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED2, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED3, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED4, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED5, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">low</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 4-->
+      <div class="actividad" id="actividad5">
+         <h2>Actividad 5</h2>
+         <p>Esta actividad se realizara un semaforo usando un Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED2 <span class="signo"> =  <span class="number">12</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED3 <span class="signo"> =  <span class="number">11</span>;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED1, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED2, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED3, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 5-->
+      <div class="actividad" id="actividad6">
+         <h2>Actividad 6</h2>
+         <p>Esta actividad se realizara un semaforo (nuevamente) pero se le quitara lineas de codigo usando un Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED2 <span class="signo"> =  <span class="number">12</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED3 <span class="signo"> =  <span class="number">11</span>;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED1, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED2, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED3, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 6-->
+      <div class="actividad" id="actividad7">
+         <h2>Actividad 7</h2>
+         <p>Esta actividad se realizara el encendido y apagado de un led usando un boton en Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> BOTON <span class="signo"> =  <span class="number">7</span>;</span> <br>
+               <span class="variables">int</span> val<span class="signo">;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>BOTON, <span class="resaltador">INPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; val<span class="signo"> = </span> digitalRead<span class="signo">(<span class="texto">BOTON</span>)</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="resaltador">if <span class="signo">( <span class="texto">val <span class="signo"> == </span> <span class="resaltador">HIGH</span> </span> ){</span></span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">} <span class="resaltador">else</span> {</span><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">}</span><br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 7-->
+      <div class="actividad" id="actividad8">
+         <h2>Actividad 8</h2>
+         <p>Esta actividad se realizara la secuencia de encendido y apagado de dos leds usando un boton en Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED2 <span class="signo"> =  <span class="number">12</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> BOTON <span class="signo"> =  <span class="number">7</span>;</span> <br>
+               <span class="variables">int</span> val<span class="signo">;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED1, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED2, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>BOTON, <span class="resaltador">INPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; val<span class="signo"> = </span> digitalRead<span class="signo">(<span class="texto">BOTON</span>)</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="resaltador">if <span class="signo">( <span class="texto">val <span class="signo"> == </span> <span class="resaltador">HIGH</span> </span> ){</span></span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">} <span class="resaltador">else</span> {</span><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">}</span><br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 8-->
+      <div class="actividad" id="actividad9">
+         <h2>Actividad 9</h2>
+         <p>Esta actividad se realizara el encendido y apagado de un led usando una LDR en Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LDR <span class="signo"> =  <span class="number">7</span>;</span> <br>
+               <span class="variables">int</span> val<span class="signo">;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LDR, <span class="resaltador">INPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="resaltador">if <span class="signo">( <span class="texto">val <span class="signo"> == </span> <span class="resaltador">HIGH</span> </span> ){</span></span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">} <span class="resaltador">else</span> {</span><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">}</span><br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 9-->
+      <div class="actividad" id="actividad10">
+         <h2>Actividad 10</h2>
+         <p>Esta actividad se realizara la secuencia de encendido y apagado de un led usando una LDR en Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED2 <span class="signo"> =  <span class="number">12</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LDR <span class="signo"> =  <span class="number">7</span>;</span> <br>
+               <span class="variables">int</span> val<span class="signo">;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED1, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED2, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LDR, <span class="resaltador">INPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="resaltador">if <span class="signo">( <span class="texto">val <span class="signo"> == </span> <span class="resaltador">HIGH</span> </span> ){</span></span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">} <span class="resaltador">else</span> {</span><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">}</span><br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 10-->
+      <div class="actividad" id="actividad11">
+         <h2>Actividad 11</h2>
+         <p>Esta actividad se realizara la secuencia de encendido y apagado de un led usando una LDR en Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED2 <span class="signo"> =  <span class="number">12</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED3 <span class="signo"> =  <span class="number">11</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LDR <span class="signo"> =  <span class="number">7</span>;</span> <br>
+               <span class="variables">int</span> val<span class="signo">;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED1, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED2, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED3, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LDR, <span class="resaltador">INPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="resaltador">if <span class="signo">( <span class="texto">val <span class="signo"> == </span> <span class="resaltador">HIGH</span> </span> ){</span></span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">} <span class="resaltador">else</span> {</span><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">}</span><br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 11-->
+      <div class="actividad" id="actividad12">
+         <h2>Actividad 12</h2>
+         <p>Esta actividad se realizara la secuencia de encendido y apagado de un led usando una LDR en Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED2 <span class="signo"> =  <span class="number">12</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED3 <span class="signo"> =  <span class="number">11</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED4 <span class="signo"> =  <span class="number">10</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LED5 <span class="signo"> =  <span class="number">9</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LDR <span class="signo"> =  <span class="number">7</span>;</span> <br>
+               <span class="variables">int</span> val<span class="signo">;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED1, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED2, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED3, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED4, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED5, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LDR, <span class="resaltador">INPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="resaltador">if <span class="signo">( <span class="texto">val <span class="signo"> == </span> <span class="resaltador">HIGH</span> </span> ){</span></span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp delay<span class="signo">(<span class="number">500</span>)</span>; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">} <span class="resaltador">else</span> {</span><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED1, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED2, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED3, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED4, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED5, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">}</span><br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+      <!--Actividad 12-->
+      <div class="actividad" id="actividad13">
+         <h2>Actividad 13</h2>
+         <p>Esta actividad se realizara el encendido y apagado de un led usando una LDR en Arduino</p>
+         <div class="codigo">
+            <code>
+               <span class="resaltador">const</span> <span class="variables">int</span> OSI1 <span class="signo"> =  <span class="number">13</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> OSI2 <span class="signo"> =  <span class="number">12</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> SEM1 <span class="signo"> =  <span class="number">11</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> SEM2 <span class="signo"> =  <span class="number">10</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> SEM3 <span class="signo"> =  <span class="number">9</span>;</span> <br>
+               <span class="resaltador">const</span> <span class="variables">int</span> LDR <span class="signo"> =  <span class="number">7</span>;</span> <br>
+               <span class="variables">int</span> val<span class="signo">;</span> <br>
+               <span class="resaltador">void</span> setup<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LED, <span class="resaltador">OUTPUT</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; pinMode<span class="signo">(</span>LDR, <span class="resaltador">INPUT</span><span class="signo">);</span> <br>
+               <span class="signo">{</span> <br>
+
+               <span class="resaltador">void</span> loop<span class="signo">()</span> <br>
+               <span class="signo">{</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="resaltador">if <span class="signo">( <span class="texto">val <span class="signo"> == </span> <span class="resaltador">HIGH</span> </span> ){</span></span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED, <span class="resaltador">HIGH</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">} <span class="resaltador">else</span> {</span><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; digitalWrite<span class="signo">(</span>LED, <span class="resaltador">LOW</span><span class="signo">);</span> <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; <span class="signo">}</span><br>
+               <span class="signo">{</span> <br>
+            </code>
+         </div>
+      </div>
+   </main>
+</body>
+
+</html>

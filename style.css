@@ -1,0 +1,48 @@
+:root {
+   --texto: #ff6400;
+   --resaltador1: #e6cd69;
+   --variables: #8da6ce;
+   --parentesis: #fff;
+   --number: #d8fa3c;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #282828;
+   color: #fff;
+}
+
+h1 {
+   text-align: center;
+}
+
+main {
+   margin: 10px;
+}
+
+.codigo {
+   padding: 20px;
+   border-radius: 5px;
+   background-color: #0c1021;
+   color: var(--texto);
+}
+
+.resaltador {
+   color: var(--resaltador1);
+}
+
+.variables {
+   color: var(--variables);
+}
+
+.signo {
+   color: var(--parentesis);
+}
+
+.number {
+   color: var(--number);
+}
+
+.texto {
+   color: var(--texto);
+}
